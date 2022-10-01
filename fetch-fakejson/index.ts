@@ -15,11 +15,15 @@ axios.get(theTodo)
     const todo = response.data as Todo
     const id = todo.id
     const title = todo.title
-    const done = todo.completed
+    const completed = todo.completed
     
-    console.log(`
+    logTodo(id, title, completed)
+  })
+
+const logTodo = (id: number, title: string, completed: boolean) => {
+  console.log(`
       Showing data of the TODO: #${id}
       Title: ${title}
-      Is completed: ${done}
+      Is completed: ${completed}
     `)
-  })
+}
