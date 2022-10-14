@@ -1,15 +1,15 @@
 // CLASSES in TS
 // Classes are blueprints to create objects with values and methods to represent something
 
-class Vehicle {
+class VehicleCla {
   make: string
   model: string
-  year: number | Date
+  year: number
   color: string = 'white'
 
 
   // The constructor is instantly executed when a new instance is created
-  constructor(make: string, model: string, year: number | Date, color: string) {
+  constructor(make: string, model: string, year: number, color: string) {
     this.make = make
     this.model = model
     this.year = year
@@ -26,7 +26,7 @@ class Vehicle {
 }
 
 // Inheritance
-class Car extends Vehicle {
+class Car extends VehicleCla {
   // Overriding an inherited property
   // color = 'blue'
   // Overring an inherited method
