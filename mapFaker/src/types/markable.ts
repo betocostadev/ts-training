@@ -3,4 +3,5 @@ export interface Markable {
     lat: number
     lng: number
   }
+  markerMessage(): string
 }

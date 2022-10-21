@@ -10,7 +10,7 @@ export class CustomMap {
 
   constructor(elementId: string) {
     this.googleMap = new google.maps.Map(document.getElementById(elementId), {
-      zoom: 1, 
+      zoom: 1,
       center: { 
         lat: 0, 
         lng: 0 
@@ -19,12 +19,20 @@ export class CustomMap {
   }
 
   addMarker(instance: Markable): void {
-    new google.maps.Marker({
+    const marker = new google.maps.Marker({
       map: this.googleMap,
       position: {
         lat: instance.location.lat,
         lng: instance.location.lng
       }
+    })
+
+    marker.addListener('click', () => {
+      const infoWindow = new google.maps.InfoWindow({
+        content: instance.markerMessage()
+      })
+
+      infoWindow.open(this.googleMap, marker)
     })
   }
 }

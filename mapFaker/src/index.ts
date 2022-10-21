@@ -12,7 +12,6 @@ map.addMarker(user)
 map.addMarker(company)
 
 // const mapDiv: HTMLElement = document.getElementById('map')
-// const mapOptions = { zoom:}
 // const map = new google.maps.Map(mapDiv, { zoom: 1, center: { lat: company.location.lat, lng: company.location.lng }})
 // console.log(user)
 // console.log(company)
