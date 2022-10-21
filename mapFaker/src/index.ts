@@ -8,8 +8,8 @@ const user = new User()
 const company = new Company()
 const map = new CustomMap('map')
 
-map.addUserMarker(user)
-map.addCompanyMarker(company)
+map.addMarker(user)
+map.addMarker(company)
 
 // const mapDiv: HTMLElement = document.getElementById('map')
 // const mapOptions = { zoom:}
