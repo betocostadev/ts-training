@@ -20,8 +20,9 @@ export class Company {
   markerMessage(): string {
     return `
       <div>
-        <h2>Company: ${this.companyName}</h2>
-        <h3>${this.catchPhrase}</h3>
+        <h2>Company</h2>
+        <h3>${this.companyName}</h3>
+        <h4>${this.catchPhrase}</h4>
       </div>
     `
   }

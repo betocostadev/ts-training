@@ -1,3 +1,4 @@
+/// <reference types="@types/google.maps" />
 // ===== Hiding Functionality =====
 // This Class was created to hide most of the functionality in Google Maps
 // this was done to prevent other developers calling Google Maps functions that could break the app
@@ -10,7 +11,7 @@ export class CustomMap {
 
   constructor(elementId: string) {
     this.googleMap = new google.maps.Map(document.getElementById(elementId), {
-      zoom: 1,
+      zoom: 2,
       center: { 
         lat: 0, 
         lng: 0 

@@ -1,6 +1,8 @@
 import { faker } from '@faker-js/faker'
+import { Markable } from './types/markable'
 
-export class User {
+// When using implements like below, TS will make sure the User class satisfies the Markable class
+export class User implements Markable {
   name: string
   location: {
     lat: number
