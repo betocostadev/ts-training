@@ -1,6 +1,7 @@
 import { Sorter } from './Sorter'
 import { NumbersCollection } from './NumbersCollection'
 import { CharactersCollection } from './CharactersCollection'
+import { LinkedList } from './LinkedList'
 console.log('Sorter running - build done')
 
 // Check the old_index.ts to understand why we changed the approach
@@ -16,3 +17,19 @@ const charsSorterOne = new Sorter(charsColOne)
 charsSorterOne.sort()
 console.log('Characters to sort: noDe')
 console.log(charsColOne.data)
+
+const linkedOne = new LinkedList()
+console.log(linkedOne)
+console.log(linkedOne.length)
+linkedOne.add(500)
+linkedOne.add(200)
+linkedOne.add(-10)
+linkedOne.add(-3)
+linkedOne.add(40)
+console.log('Linked list data to sort: 500, 200, -10, -3, 40')
+console.log('Linked list length: ', linkedOne.length)
+console.log('LinkedOne start:', linkedOne.print())
+const linkedSorterOne = new Sorter(linkedOne)
+linkedSorterOne.sort()
+console.log('LinkedOne sorted:', linkedOne.print())
+

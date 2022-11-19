@@ -20,7 +20,6 @@ export class LinkedList {
     }
 
     let tail = this.head
-
     while (tail.next) {
       tail = tail.next
     }
@@ -37,6 +36,7 @@ export class LinkedList {
 
     while (node.next) {
       length++
+      node = node.next
     }
 
     return length
@@ -83,7 +83,8 @@ export class LinkedList {
   }
 
   // Print the Nodes
-  print(): void {
+  print(): void | Node[] {
+    const toPrint = []
     if (!this.head) {
       return
     }
@@ -91,8 +92,9 @@ export class LinkedList {
     let node: Node | null = this.head
 
     while (node) {
-      console.log(node.data)
+      toPrint.push(node)
       node = node.next
     }
+    return toPrint
   }
 }

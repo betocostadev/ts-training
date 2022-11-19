@@ -40,9 +40,9 @@ class OldSorter {
   }
 }
 
-const sorterTest1 = new OldSorter([10, -10, -5, -3, 20, 50, 40, 30])
-console.log(sorter.collection)
-sorter.sort()
-console.log(sorter.collection)
-const sorterTest2 = new OldSorter('aabCDe')
-console.log(sorter2.collection)
+// const sorterTest1 = new OldSorter([10, -10, -5, -3, 20, 50, 40, 30])
+// console.log(sorter.collection)
+// sorter.sort()
+// console.log(sorter.collection)
+// const sorterTest2 = new OldSorter('aabCDe')
+// console.log(sorter2.collection)

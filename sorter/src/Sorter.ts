@@ -1,7 +1,7 @@
-import { Sortable } from './types/Sortable'
+import { SortableType } from './types/sortableType'
 
 export class Sorter {
-  constructor(public collection: Sortable) {
+  constructor(public collection: SortableType) {
     // this.collection = collection
   }
 
