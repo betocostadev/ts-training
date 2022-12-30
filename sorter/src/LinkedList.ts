@@ -1,13 +1,9 @@
+import { Node } from './shared/Node'
+import { Sorter } from './shared/Sorter'
 // Linked list
 // | ----- Node ----- | ...
 // [head: 10, next: 20] => [head: 20, next: 55] => [head: 55, next: null] => null
-class Node {
-  next: Node | null = null
-
-  constructor (public data: number) {}
-}
-
-export class LinkedList {
+export class LinkedList extends Sorter {
   head: Node | null = null
 
   // Add a new Node to the list
